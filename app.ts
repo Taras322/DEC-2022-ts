@@ -62,20 +62,12 @@ interface IFirstStage{
 }
 interface ICores{
     flight:number,
-    core: ICore
-}
-interface ICore{
-    reuse_count:number,
-    status:string,
+    core: number | string
 }
 interface ISecondStage{
-    payloads:IPayloads
+    payloads:number | string
 }
-interface IPayloads{
-    payload_type: string,
-    payload_mass_kg: number,
-    payload_mass_lbs: number,
-}
+
 // ---------------------------------------------------------------------------—————————
 // 2) протипізувати функції:
 //
